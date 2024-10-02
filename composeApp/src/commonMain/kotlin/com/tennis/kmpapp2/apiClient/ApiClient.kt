@@ -17,7 +17,7 @@ import kotlinx.serialization.json.Json
 val httpClient = HttpClient{
     install(ContentNegotiation){
         json(
-            Json{
+            Json{ //json config
                 prettyPrint = true
                 ignoreUnknownKeys = true
             }
